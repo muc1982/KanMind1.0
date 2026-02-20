@@ -1,0 +1,11 @@
+[run]
+omit = 
+    manage.py
+    core/asgi.py
+    core/wsgi.py
+    */migrations/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    return False

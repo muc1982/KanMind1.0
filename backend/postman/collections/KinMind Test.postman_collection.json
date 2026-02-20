@@ -1,0 +1,538 @@
+{
+  "info": {
+    "_postman_id": "da87962b-fc96-4f99-9ae7-0e1e02b7fbcc",
+    "name": "KinMind Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://127.0.0.1:8000//api/registration/",
+      "id": "f976fb14-f7e7-4924-a93d-912d0f83a1ec",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fullname\": \"Example Username\",\r\n  \"email\": \"example@mail.de\",\r\n  \"password\": \"examplePassword\",\r\n  \"repeated_password\": \"examplePassword\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000//api/registration/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "",
+            "api",
+            "registration",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000//api/login/",
+      "id": "642ca0b1-c983-43a4-8a0d-de61c8f6db38",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"example@mail.de\",\r\n  \"password\": \"examplePassword\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/login/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "login",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/",
+      "id": "65a8ca1c-e42f-4143-a84d-3a68e806aac1",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"title\": \"Projekt X\",\r\n    \"member_count\": 2,\r\n    \"ticket_count\": 5,\r\n    \"tasks_to_do_count\": 2,\r\n    \"tasks_high_prio_count\": 1,\r\n    \"owner_id\": 1\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"title\": \"Projekt Y\",\r\n    \"member_count\": 12,\r\n    \"ticket_count\": 43,\r\n    \"tasks_to_do_count\": 12,\r\n    \"tasks_high_prio_count\": 1,\r\n    \"owner_id\": 1\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/",
+      "id": "c1bc863a-40ae-4979-b56b-1a82180d67f5",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Neues Projekt\",\r\n  \"members\": [\r\n    12,\r\n    5,\r\n    54,\r\n    2\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/2/",
+      "id": "269c8133-a597-4ad7-881e-8069bdc9eaf5",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Projekt X\",\r\n  \"owner_id\": 12,\r\n  \"members\": [\r\n    {\r\n      \"id\": 1,\r\n      \"email\": \"max.mustermann@example.com\",\r\n      \"fullname\": \"Max Mustermann\"\r\n    },\r\n    {\r\n      \"id\": 54,\r\n      \"email\": \"max.musterfrau@example.com\",\r\n      \"fullname\": \"Maxi Musterfrau\"\r\n    }\r\n  ],\r\n  \"tasks\": [\r\n    {\r\n      \"id\": 5,\r\n      \"title\": \"API-Dokumentation schreiben\",\r\n      \"description\": \"Die API-Dokumentation für das Backend vervollständigen\",\r\n      \"status\": \"to-do\",\r\n      \"priority\": \"high\",\r\n      \"assignee\": null,\r\n      \"reviewer\": {\r\n        \"id\": 1,\r\n        \"email\": \"max.mustermann@example.com\",\r\n        \"fullname\": \"Max Mustermann\"\r\n      },\r\n      \"due_date\": \"2025-02-25\",\r\n      \"comments_count\": 0\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"title\": \"Code-Review durchführen\",\r\n      \"description\": \"Den neuen PR für das Feature X überprüfen\",\r\n      \"status\": \"review\",\r\n      \"priority\": \"medium\",\r\n      \"assignee\": {\r\n        \"id\": 1,\r\n        \"email\": \"max.mustermann@example.com\",\r\n        \"fullname\": \"Max Mustermann\"\r\n      },\r\n      \"reviewer\": null,\r\n      \"due_date\": \"2025-02-27\",\r\n      \"comments_count\": 0\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/1/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            "1",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/registration/",
+      "id": "646daa41-4190-41cb-8c45-b3455ef227b9",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"userA\",\r\n    \"email\": \"userA@test.de\",\r\n    \"fullname\": \"User A\",\r\n    \"password\": \"test1234\",\r\n    \"repeated_password\": \"test1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/registration/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "registration",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/registration/",
+      "id": "9eba0686-81cb-425e-8cb9-bc0cf418292c",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"userB\",\r\n    \"email\": \"userB@test.de\",\r\n    \"fullname\": \"User B\",\r\n    \"password\": \"test1234\",\r\n    \"repeated_password\": \"test1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/registration/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "registration",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/",
+      "id": "6fe93cac-ec26-421d-8f75-bcd2b847d904",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 74d28ad91bf0a6154d4d4e6fb66ed647c5128bb0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Board von User A\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/1/",
+      "id": "eb888c6e-79a5-47c9-8050-de6798f9eac5",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token d45b2002e55c26c8787a2ddc776eb06c3dbfaf47",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/99999/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            "99999",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/1/",
+      "id": "4d320f80-efb8-4fd9-9f76-5876dcc818fe",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 3,\r\n  \"title\": \"Changed title\",\r\n  \"owner_data\": {\r\n    \"id\": 1,\r\n    \"email\": \"max.mustermann@example.com\",\r\n    \"fullname\": \"Max Mustermann\"\r\n  },\r\n  \"members_data\": [\r\n    {\r\n      \"id\": 1,\r\n      \"email\": \"max.mustermann@example.com\",\r\n      \"fullname\": \"Max Mustermann\"\r\n    },\r\n    {\r\n      \"id\": 54,\r\n      \"email\": \"max.musterfrau@example.com\",\r\n      \"fullname\": \"Maxi Musterfrau\"\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/boards/99999/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "boards",
+            "99999",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/boards/1/",
+      "id": "fd67679e-deab-475c-83b4-af67a7bb8320",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \r\n    \"fullname\": \"Example Username\",\r\n    \"email\": \"example@mail.de\",\r\n    \"user_id\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/email-check/?email=example@mail.de",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "email-check",
+            ""
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "example@mail.de"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/reviewing/",
+      "id": "04392f3e-36ab-480c-895a-3cc23c37edd3",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "token 5ad2f3b28ae25e0469643874103c0e59778701a0",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "Authorization",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Review Task\",\r\n    \"description\": \"Test\",\r\n    \"board\": 2,\r\n    \"status\": \"to-do\",\r\n    \"priority\": \"high\",\r\n    \"assignee_id\": 1,\r\n    \"reviewer_id\": 1,\r\n    \"due_date\": \"2026-03-01\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
