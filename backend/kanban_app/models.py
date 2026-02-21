@@ -21,7 +21,7 @@ class Board(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ['-created_at', '-id']
         verbose_name = 'Board'
         verbose_name_plural = 'Boards'
 
@@ -84,7 +84,7 @@ class Task(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['created_at']
+        ordering = ['created_at', 'id']
         verbose_name = 'Task'
         verbose_name_plural = 'Tasks'
 
@@ -108,7 +108,7 @@ class Comment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['created_at']
+        ordering = ['created_at', 'id']
         verbose_name = 'Comment'
         verbose_name_plural = 'Comments'
 
