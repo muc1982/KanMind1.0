@@ -104,7 +104,7 @@ class TestLogin:
         create_user(email='login@test.de', password='test1234')
         data = {'email': 'login@test.de', 'password': 'test1234'}
         response = api_client.post('/api/login/', data)
-        assert response.status_code == status.HTTP_201_CREATED
+        assert response.status_code == status.HTTP_200_OK
         assert 'token' in response.data
 
     def test_login_wrong_password(self, api_client, create_user):

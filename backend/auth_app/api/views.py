@@ -51,7 +51,7 @@ class LoginView(APIView):
         user = self._authenticate_user(serializer.validated_data)
         if user:
             return Response(
-                create_auth_response(user), status=status.HTTP_201_CREATED
+                create_auth_response(user), status=status.HTTP_200_OK
             )
         return Response(
             {'error': 'Invalid'}, status=status.HTTP_400_BAD_REQUEST)

@@ -1,13 +1,13 @@
 {
   "info": {
-    "_postman_id": "af1a9d61-6285-40f1-93fe-9a1d3f0ced83",
+    "_postman_id": "e3f32718-4833-4686-9596-8fd95ba7e34e",
     "name": "KinMind",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
       "name": "http://127.0.0.1:8000/api/registration/",
-      "id": "a5f01d8b-7c5b-4a00-b879-1c33efe7867d",
+      "id": "3be331d6-dcc6-4554-8d08-51bfce2584d1",
       "request": {
         "method": "POST",
         "header": [],
@@ -41,7 +41,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/login/",
-      "id": "667aa595-0ba5-4702-a9aa-803ce99640fd",
+      "id": "bc0984df-c7d0-4438-8c76-d161e42a65bf",
       "request": {
         "method": "POST",
         "header": [],
@@ -75,7 +75,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/",
-      "id": "3926b38f-03a0-411b-b67d-04f33fca7ba0",
+      "id": "41a1cdfb-1735-49a0-b27f-5c3a6cda31ad",
       "request": {
         "auth": {
           "type": "apikey",
@@ -115,7 +115,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/",
-      "id": "a3e5f2e8-27f8-40fa-8a37-53b3eaa8d0a0",
+      "id": "6735ad79-c566-4eb1-a1dc-4f47c0f09bca",
       "request": {
         "auth": {
           "type": "apikey",
@@ -164,7 +164,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/6/",
-      "id": "7bd38c8d-0f31-4ae6-b65a-1c941c619952",
+      "id": "0b3884f4-1ddb-4cd8-8322-27b9c3d92fc7",
       "request": {
         "auth": {
           "type": "apikey",
@@ -205,7 +205,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/7/",
-      "id": "c7e70672-b197-4ea6-9863-30457ec76e8c",
+      "id": "d5d222b6-ccfc-49e7-a277-1b5ccb706685",
       "request": {
         "auth": {
           "type": "apikey",
@@ -255,7 +255,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/7/",
-      "id": "fb344cfc-ed93-4026-88c1-93f1c5c90ab0",
+      "id": "88438b29-fcf7-4e72-8cc2-46de09952cb5",
       "request": {
         "auth": {
           "type": "apikey",
@@ -296,7 +296,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/",
-      "id": "970ff00f-be5d-4b68-a9aa-d889d7cc4a35",
+      "id": "b6e578d7-d063-4db0-aca5-86ed67bad235",
       "request": {
         "auth": {
           "type": "apikey",
@@ -345,7 +345,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/6/",
-      "id": "72e8fa80-009d-469e-a97d-1db99aeee466",
+      "id": "a26bc554-51cb-417a-8b0a-7e08112bcf7a",
       "request": {
         "auth": {
           "type": "apikey",
@@ -395,7 +395,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/6/",
-      "id": "cc179cbf-3f68-4556-9bdf-4225ef4e1653",
+      "id": "e2afb1c4-84f6-4656-8de0-f60c9104e7ea",
       "request": {
         "auth": {
           "type": "apikey",
@@ -436,7 +436,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/2/comments/",
-      "id": "89076146-0b0e-40db-af00-68abdf53525c",
+      "id": "d11a0dc3-d5a1-46ab-bc62-7afebc4e35b5",
       "request": {
         "auth": {
           "type": "apikey",
@@ -476,7 +476,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/5/comments/",
-      "id": "76303df5-7e0e-4cb4-b907-5daaef9a45d3",
+      "id": "53dbf7da-28a0-4986-a86f-64568798f8f3",
       "request": {
         "auth": {
           "type": "apikey",
@@ -518,7 +518,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/5/comments/",
-      "id": "17e0ab7c-0cad-4bb0-baf8-aa0d07b8938a",
+      "id": "298bde2b-d4e8-40d3-b767-25b227b7e625",
       "request": {
         "auth": {
           "type": "apikey",
@@ -569,7 +569,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/5/comments/5/",
-      "id": "271b32ed-e008-45d7-995a-dee60237fb45",
+      "id": "af1c7e13-f78c-48bf-a551-210c2c4b1c6d",
       "request": {
         "auth": {
           "type": "apikey",
@@ -621,7 +621,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/5/comments/",
-      "id": "3c9fe03b-1461-4839-afa4-523495a4b7a8",
+      "id": "7d9943a1-ee9e-4ae2-843e-b458a3446e57",
       "request": {
         "auth": {
           "type": "apikey",
@@ -663,7 +663,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/email-check/",
-      "id": "b51598b3-af6e-428b-af3a-3422ccdb79fa",
+      "id": "25dcde9a-b200-4178-97a9-1bc2297dd459",
       "request": {
         "auth": {
           "type": "apikey",
@@ -709,7 +709,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/",
-      "id": "099ecbbf-4aa8-4e16-838c-f8331bbe9c7e",
+      "id": "4083edd6-aff8-4050-9431-eb9a00210f22",
       "request": {
         "auth": {
           "type": "apikey",
@@ -749,7 +749,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/assigned-to-me/",
-      "id": "b904dfca-2de0-42eb-a2b0-0f3ed787bd80",
+      "id": "cf4c1cc6-7849-4c60-8d57-fdc554610bcb",
       "request": {
         "auth": {
           "type": "apikey",
@@ -790,7 +790,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/reviewing",
-      "id": "1c7cc98a-57cf-4f51-b14a-2fdb7700f635",
+      "id": "2b65435b-69f1-496f-9466-8d8ff045929c",
       "request": {
         "auth": {
           "type": "apikey",
@@ -830,7 +830,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/5/",
-      "id": "b42c3acc-b44e-4dd9-a437-e75d952e86b4",
+      "id": "5737e435-aca7-40f2-b298-4e2ef33b8c3f",
       "request": {
         "auth": {
           "type": "apikey",
@@ -871,7 +871,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/registration/",
-      "id": "1450bed2-2195-456f-bcb4-7a2860e5a0fc",
+      "id": "413e4afa-6ce7-4484-8152-415e9d0a1e72",
       "request": {
         "method": "POST",
         "header": [],
@@ -905,7 +905,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/login/",
-      "id": "be2b2dca-8575-4a6b-a103-2f0877f7f228",
+      "id": "32bc39f5-4a48-45be-a74d-c1f9f7d50129",
       "request": {
         "method": "POST",
         "header": [],
@@ -939,7 +939,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/8/",
-      "id": "dd57c3fb-a798-42e4-b1d5-e2623aed1544",
+      "id": "d5aab5fa-b774-4a34-b87c-3002af88910a",
       "request": {
         "auth": {
           "type": "apikey",
@@ -989,7 +989,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/8/",
-      "id": "dc9f2025-13be-4e91-83fc-b0177fcc019d",
+      "id": "170baeff-360e-4139-ab30-9fa2a75215a2",
       "request": {
         "auth": {
           "type": "apikey",
@@ -1030,7 +1030,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/boards/",
-      "id": "6b935ba5-221e-4200-a465-1d68d861b60e",
+      "id": "eb19ecb9-fe5c-4cae-9178-0c2e33846eb8",
       "request": {
         "auth": {
           "type": "apikey",
@@ -1079,7 +1079,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/",
-      "id": "3a043d72-a0f3-4c9f-8bb5-96aaf01ac564",
+      "id": "2b023d6e-cb07-46a8-93b0-2a0e55d9a18e",
       "request": {
         "auth": {
           "type": "apikey",
@@ -1128,7 +1128,7 @@
     },
     {
       "name": "http://127.0.0.1:8000/api/tasks/8/",
-      "id": "642acebf-ea3e-41fb-9087-91d3ee8cf850",
+      "id": "fc497165-4de3-41c5-b93f-46dc1eacca53",
       "request": {
         "auth": {
           "type": "apikey",
